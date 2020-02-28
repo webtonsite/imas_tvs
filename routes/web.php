@@ -17,5 +17,7 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/admin', 'HomeController@index')->name('admin');
-Route::middleware('auth')->resource('/admin/pages', 'admin\PageController');
+Route::middleware(['auth'])->group(function () {
+	Route::get('/admin', 'HomeController@index')->name('admin');
+	Route::resource('/admin/pages', 'admin\PageController');
+});
