@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Http\Requests\PageRequest;
 use App\Page;
 use App\Jobs\UploadPagePhoto;
 
@@ -24,8 +25,9 @@ class PageController extends Controller
         return view('admin.pages.create');
     }
 
-    public function store(Request $request)
+    public function store(PageRequest $request)
     {
+        $request->validated();
         $page = Page::create($request->all());
         return redirect()
                     ->route('pages.index')
@@ -40,8 +42,9 @@ class PageController extends Controller
         return view('admin.pages.edit', $data);
     }
 
-    public function update(Request $request, Page $page)
+    public function update(PageRequest $request, Page $page)
     {
+        $request->validated();
         $page->update($request->all());
 
         if (isset($request->photo))
