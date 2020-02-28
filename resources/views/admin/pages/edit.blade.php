@@ -7,6 +7,9 @@
             <div class="card">
                 <div class="card-header">Edit Page</div>
                 <div class="card-body">
+                    @include('admin.includes.alerts.show_success')
+                    @include('admin.includes.alerts.show_errors')
+                    
                     {{ Form::model($page, [ 'files'=>true, 'route'=>['pages.update', $page->id], 'method'=>'PUT']) }} 
 
                         <div class="row">  
