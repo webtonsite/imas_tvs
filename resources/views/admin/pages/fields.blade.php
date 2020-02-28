@@ -19,10 +19,10 @@
 <div class="col-sm-6">
     <div class="card-box">
         @if(isset($page))
-            @include('admin.includes.select_photo', 
+            @include('admin.includes.inputs.select_photo', 
               ['photo_url'=>$page->photo_url])
         @else
-            @include('admin.includes.select_photo', 
+            @include('admin.includes.inputs.select_photo', 
               ['photo_url'=>''])
         @endif
     </div>
