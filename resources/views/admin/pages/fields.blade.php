@@ -5,7 +5,7 @@
           ['title'=>'Title',
            'name'=>'title',
            'placeholder'=>'enter title', 
-           'required'=>'required'])
+           'required'=>''])
 
         @include('admin.includes.inputs.textarea',
           ['title'=>'Description', 

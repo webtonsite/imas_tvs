@@ -15,6 +15,12 @@
                     @endif
 
                     You are logged in!
+
+                    <div>
+                        Go to ADMIN pages: 
+                        <a href="{{ route('pages.index') }}">Pages</a>
+                    </div>
+                    
                 </div>
             </div>
         </div>
