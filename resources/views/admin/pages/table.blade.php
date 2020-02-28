@@ -4,6 +4,7 @@
             <th></th>
             <th>ID</th>
             <th>Title</th>
+            <th>Created</th>
             <th>Actions</th>
         </tr>
     </thead>
@@ -15,6 +16,7 @@
                 </td>
                 <td>{{ $page->id }}</td>
                 <td>{{ $page->title }}</td>
+                <td>{{ $page->created_at }}</td>
                 <td>
                     <!-- ACTIONS -->
                     <div class="float-left pr-1">
