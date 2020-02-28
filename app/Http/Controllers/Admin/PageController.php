@@ -13,7 +13,7 @@ class PageController extends Controller
 
     public function index()
     {
-        $pages = Page::all();
+        $pages = Page::all()->sortByDesc('id');
         $data = [
             'pages' => $pages,
         ];
@@ -29,6 +29,10 @@ class PageController extends Controller
     {
         $request->validated();
         $page = Page::create($request->all());
+        
+        if (isset($request->photo))
+            UploadPagePhoto::dispatchNow($page, $request->file('photo'));
+
         return redirect()
                     ->route('pages.index')
                     ->with('success', "Created successfuly");
