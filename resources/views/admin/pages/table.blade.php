@@ -20,6 +20,9 @@
                 <td>
                     <!-- ACTIONS -->
                     <div class="float-left pr-1">
+                        <a target="_blank" href="{{route('page', ['id' => $page->id])}}" class="btn btn-success">Open</a>
+                    </div>
+                    <div class="float-left pr-1">
                         <a href="{{route('pages.edit', ['page' => $page->id])}}" class="btn btn-primary">Edit</a>
                     </div>
                     <div class="float-left">
