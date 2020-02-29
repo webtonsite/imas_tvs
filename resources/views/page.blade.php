@@ -26,7 +26,7 @@
 
 				<div class="row">
 					<div class="col-sm-6">
-						<img src="/storage/{{ $page->photo_url }}" class="img-rounded" alt="{{ $page->title }}">
+						<img src="/storage/{{ $page->photo_url }}" class="page-image" alt="{{ $page->title }}">
 					</div>
 					<div class="col-sm-6">
 						<div class="description">
