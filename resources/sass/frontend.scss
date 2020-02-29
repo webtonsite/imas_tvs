@@ -1,0 +1,39 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+
+header{
+	position: relative;
+}
+
+h1.title{
+    background: $orange;
+    color: $white;
+    padding: 25px;
+}
+
+.date-created{
+	position: absolute;
+    right: 5px;
+    top: 5px;
+    padding: 10px;
+    background: $dark_orange;
+    color: $white;
+    border-radius: 5px;
+}
+
+.description{
+	
+}
+
+footer{
+    padding: 25px;
+    background: $black;
+    color: $white;
+}
