@@ -10884,3 +10884,29 @@ a.text-dark:focus {
   }
 }
 
+header {
+  position: relative;
+}
+
+h1.title {
+  background: #f6993f;
+  color: #fff;
+  padding: 25px;
+}
+
+.date-created {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 10px;
+  background: #b57230;
+  color: #fff;
+  border-radius: 5px;
+}
+
+footer {
+  padding: 25px;
+  background: #353535;
+  color: #fff;
+}
+
